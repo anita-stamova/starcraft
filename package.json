@@ -1,0 +1,19 @@
+{
+  "name": "starcraft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anita-stamova/starcraft.git"
+  },
+  "author": "Anita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anita-stamova/starcraft/issues"
+  },
+  "homepage": "https://github.com/anita-stamova/starcraft#readme"
+}
