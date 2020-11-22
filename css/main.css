@@ -83,7 +83,7 @@ header {
   background: #417ab2;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(65, 122, 178, 0.5)), color-stop(35%, rgba(65, 122, 178, 0.08)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, rgba(65, 122, 178, 0.5) 0%, rgba(65, 122, 178, 0.08) 35%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#417ab2",endColorstr="#000000",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#417ab2", endColorstr="#000000", GradientType=1);
 }
 
 .nav--main {
@@ -160,49 +160,44 @@ header {
   height: 75px;
 }
 
-.img-container .line-vertical {
+.img-container .line {
   background: #42d6e9;
+  border-radius: 3px;
+  position: absolute;
   width: 40px;
   height: 3px;
-  top: -2px;
-  left: 22px;
-  position: absolute;
-  border-radius: 3px;
   border: 1px solid rgba(14, 21, 39, 0.85);
 }
 
-.img-container .line-vertical:after {
+.img-container .line:after {
   content: "";
   background: #42d6e9;
   width: 40px;
   height: 2px;
   position: absolute;
-  bottom: -84px;
   border-radius: 3px;
   border: 1px solid rgba(14, 21, 39, 0.85);
 }
 
-.img-container .line-horizontal {
-  border-radius: 3px;
-  background: #42d6e9;
+.img-container .line.line-horizontal {
+  top: -2px;
+  left: 22px;
+}
+
+.img-container .line.line-horizontal:after {
+  bottom: -84px;
+}
+
+.img-container .line.line-vertical {
   height: 40px;
   width: 3px;
-  position: absolute;
   left: -2px;
-  border: 1px solid rgba(14, 21, 39, 0.85);
-  border-radius: 3px;
 }
 
-.img-container .line-horizontal:after {
-  content: "";
+.img-container .line.line-vertical:after {
   height: 40px;
   width: 2px;
-  background: #42d6e9;
-  display: block;
-  position: absolute;
   right: -84px;
-  border-radius: 3px;
-  border: 1px solid rgba(14, 21, 39, 0.85);
 }
 
 .img-container .img-portrait {
